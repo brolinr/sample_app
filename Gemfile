@@ -18,12 +18,11 @@ gem 'sass-rails'
 gem 'webpacker'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'bootsnap',                   '1.4.5', require: false
+gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
     gem 'sqlite3'
     gem 'byebug',                     '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
-    gem 'rails-controller-testing',   '1.0.4'
 end
 
 group :development do
@@ -37,8 +36,14 @@ group :test do
     gem 'capybara'
     gem 'selenium-webdriver'
     gem 'webdrivers'
+    gem 'rails-controller-testing', '1.0.4'
     gem 'minitest'
     gem 'minitest-reporters'
     gem 'guard'
     gem 'guard-minitest'
+end
+
+group :production do
+  #  gem 'pg', '1.1.4'
+  ##  gem 'aws-sdk-s3', '1.46.0', require: false
 end
