@@ -10,9 +10,6 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2021_06_08_072549) do
-=======
 ActiveRecord::Schema.define(version: 2021_06_11_153617) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
@@ -42,7 +39,6 @@ ActiveRecord::Schema.define(version: 2021_06_11_153617) do
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
->>>>>>> user-microposts
 
   create_table "microposts", force: :cascade do |t|
     t.text "content"
@@ -64,10 +60,7 @@ ActiveRecord::Schema.define(version: 2021_06_11_153617) do
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
-<<<<<<< HEAD
-=======
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
->>>>>>> user-microposts
   add_foreign_key "microposts", "users"
 end

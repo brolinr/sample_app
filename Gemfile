@@ -19,6 +19,7 @@ gem 'webpacker'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'rexml', '~> 3.2', '>= 3.2.4'
 
 group :development, :test do
     gem 'sqlite3'
@@ -44,6 +45,6 @@ group :test do
 end
 
 group :production do
-  #  gem 'pg', '1.1.4'
-  ##  gem 'aws-sdk-s3', '1.46.0', require: false
+    gem 'pg', '1.1.4'
+    gem 'aws-sdk-s3', '1.46.0', require: false
 end
