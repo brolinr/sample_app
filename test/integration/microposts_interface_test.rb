@@ -53,5 +53,3 @@ class MicropostsInterfaceTest < ActionDispatch::IntegrationTest
   end
 end
   
-
-end
