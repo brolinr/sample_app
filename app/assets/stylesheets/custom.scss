@@ -66,6 +66,11 @@ p {
     text-decoration: none;
   }
 }
+/* Dropdown menu */
+
+.dropdown-menu.active {
+  display: block;
+}
 
 /* footer */
 

@@ -10,6 +10,7 @@ gem "bcrypt",                     "3.1.18"
 gem "faker",                      "2.21.0"
 gem "will_paginate",              "3.3.1"
 gem 'webpacker', '~> 5.0'
+gem 'turbolinks', '~> 5'
 gem "bootstrap-will_paginate",    "1.0.0"
 gem "bootstrap-sass",             "3.4.1"
 gem "sassc-rails",                "2.1.2"
@@ -50,3 +51,5 @@ end
 # Uncomment the following line if you're running Rails
 # on a native Windows system:
 # gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+# Use Redis for Action Cable
+gem "redis", "~> 4.0"
