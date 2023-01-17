@@ -36,7 +36,7 @@
 
 # Ignore db test files.
 db/test.*
-.idea
+/.idea
 /public/packs
 /public/packs-test
 /node_modules
