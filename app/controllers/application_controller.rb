@@ -1,6 +1,7 @@
 class ApplicationController < ActionController::Base
   include SessionsHelper
-
+  include Pagy::Backend
+  
   private
   
     # Confirms a logged-in user.
