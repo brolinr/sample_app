@@ -1,47 +1,64 @@
-README.md
+# Ruby on Rails Sample App (Hartl Tutorial)
 
-# Ruby on Rails Tutorial sample application
+This is a sample Ruby on Rails application created as part of the [Michael Hartl's Rails Tutorial](https://www.railstutorial.org/). It's designed to help you learn and understand the fundamentals of building web applications with Ruby on Rails.
 
-This is the sample application for the
-[*Ruby on Rails Tutorial:
-Learn Web Development with Rails*](https://www.railstutorial.org/)
-by [Michael Hartl](https://www.michaelhartl.com/).
+## Features
 
-## License
+- User authentication (signup, login, logout)
+- User profiles
+- Micropost creation and deletion
+- Following and followers
+- Static pages (Home, Help, About, Contact)
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+## Getting Started
 
-## Getting started
+### Prerequisites
 
-To get started with the app, clone the repo and then install the needed gems:
+Before you begin, make sure you have the following installed:
 
-```
-gem install bundler -v 2.3.14
-bundle _2.3.14_ config set --local without 'production'
-bundle _2.3.14_ install
-```
+- Ruby: 3.1.2
+- Rails: 7.0.4 
 
-Next, migrate the database:
+### Installation
 
-```
-rails db:migrate
-```
+1. Clone this repository:
 
-Finally, run the test suite to verify that everything is working correctly:
+   ```bash
+   git clone https://github.com/brolinr/sample_app.git
+   ```
+2. Navigate to the project's directory:
+  ```bash
+  cd sample_app
+  ```
+3. Install required gems:
+  ```bash
+  bundle config set --local without 'production' && bundle install
+  ```
+4. Setup the database:
+  ```bash
+  rails db:migrate
+  ```
+5. Run the tests:
+  ```bash
+  rails test
+  ```
+6. If all tests are passing then start the server:
+  ```bash
+  rails server
+  ```
+7. Open your web browser and visit `http://localhost:3000` to access the Rails Tutorial sample app.
 
-```
-rails test
-```
+### Usage
+This app is an implementation of the sample app described in Michael Hartl's Rails Tutorial. You can use it to learn the basics of Ruby on Rails, including user authentication, microposts, and more. Follow the chapters of the tutorial to explore different features.
 
-If the test suite passes, you'll be ready to run the app in a local server:
+### License
+This project is based on the [https://www.railstutorial.org/](Ruby on Rails Tutorial) by Michael Hartl. Please refer to the tutorial for licensing details and terms of use.
 
-```
-rails server
-```
+### Acknowledgments
+- Michael Hartl for the Rails Tutorial
 
-For more information, see the
-[*Ruby on Rails Tutorial* book](https://www.railstutorial.org/book).
-# sample_app
-# sample_app
+### Contact
+If you have any questions or need assistance with this sample app, please refer to the Ruby on Rails Tutorial for support and additional resources.
+Enjoy learning with the Ruby on Rails Sample App! Happy coding!
+
+
